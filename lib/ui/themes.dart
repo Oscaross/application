@@ -224,14 +224,6 @@ class Themes {
       unselectedItemColor: Colors.grey.shade600,      
     ),
 
-    cardTheme: CardTheme(
-      clipBehavior: Clip.hardEdge,
-      color: background,
-      elevation: 2,
-      shadowColor: Colors.grey.shade500,
-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(12))),
-    ),
-
     chipTheme: ChipThemeData(
       elevation: 1,
       labelStyle: TextStyle(
@@ -251,25 +243,6 @@ class Themes {
     checkboxTheme: CheckboxThemeData(
       checkColor: WidgetStatePropertyAll(Colors.white),
       fillColor: WidgetStateProperty.resolveWith((states) => states.contains(WidgetState.selected) ? Themes.primaryAccent : Themes.background),
-    ),
-
-    dialogTheme: DialogTheme(
-      backgroundColor: Colors.white,
-      titleTextStyle: TextStyle(
-        fontSize: 20,
-        fontWeight: FontWeight.bold,
-        color: textGrey,
-      ),
-
-      contentTextStyle: TextStyle(
-        fontSize: 16,
-        color: textGrey,
-      ),
-      
-      shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(20),
-      ),
-      elevation: 8,
     ),
   );
 
